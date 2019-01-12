@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+<script>
+var i = 0;
+var txt = 'Hi, I\'m Arnav'; /* The text */
+var speed = 450; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("name").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<head>
+  <meta charset="UTF-8">
+  <title>About Me Page</title>
+
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans|Gentium+Book+Basic'>
+
+
+
+</head>
+
+<style>
+    body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+  color: #000000;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFFFFF;
+}
+
+.masthead-intro {
+    /* Layout Declarations */
+    margin-bottom: 0.1em;
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    /* Layout Declarations */
+    color: #FFFFFF;
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.introduction-section > p,
+.location-section > p,
+.questions-section,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.questions-section > h2 {
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* Layout */
+    margin: 2em 0 1em 0;
+}
+
+section > h1 {
+    margin-top: 2em;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('https://media.giphy.com/media/WoD6JZnwap6s8/giphy.gif');
+  background-size: cover;
+  background-repeat:repeat;
+  border-top: solid 1em ;
+}
+.masthead-intro {
+  margin-bottom: 0.1em;
+  font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+  margin-top: -0.2em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.introduction > p,
+.location > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+h2 {
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.content-footer {
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #73A8C2;
+  text-decoration: none;
+}
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.content-footer > p {
+  color: #F7EDE1;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #F1C863;
+}
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+    .content-footer {
+        padding: 2em 2.5em;
+  }
+}
+</style>
+<body onload= "typeWriter()">
+<header class='masthead'>
+  <p class='masthead-intro'></p>
+  <h1 id ="name" class='masthead-heading'></h1>
+</header>
+<section class="introduction-section">
+    <h1>Introduction</h1>
+    <p>I am a sophmore at Interlake High School in the first year of IB.</p>
+    <p>I am an entrepreneur and buisness owner that loves coding especially web exploitation, automation and IOT devices.</p>
+</section>
+<section class="location-section">
+    <h1>Web exploitation/automation</h1>
+    <p>
+I discovered my passion for web development and requests when I started sneaker reselling. When buying hyped sneakers, they normally sell out within 10 seconds.
+To give myself a better shot at securing a pair, I created a bot which emulated the network requests of the website and checked out within 2 seconds. This was my first expirience with network development.
+Since then, I have created many bot business and sold them for over $10,000.
+</p>
+</section>
+<section class="location-section">
+    <h1>IOT</h1>
+    <p>
+ The Internet of Things opens a new frontier of possibilities for new devices. 3 years ago, I created a model toll system and presented it at Seattle University. Since then I have expanded on my IOT skills and have recently created a buisness focused on a new home security device which I am currently writing a student paper on.
+</p>
+</section>
+<section class="questions-section">
+    <h1>More About Me</h1>
+    <h2>Favorite hobbies?</h2>
+    <p>My favorite hobby is web exploitation and automation as websites constantly change their security methods.</p>
+    <h2>Dream job?</h2>
+    <p>I like owning and running buisness, so after college I want to jump into the startup scene.</p>
+    <h2>Contact Information</h2>
+    <p>email: arnav@justadev.club</p>
+</section>
+
+<footer class="content-footer">
+    <p>Checkout my github:</p>
+    <ul class="social">
+        <li><a class="css-is-deranged" href="https://github.com/ArnavChawla">GitHub</a></li>
+
+
+</footer>
+
+</body>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
